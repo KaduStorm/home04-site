@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home IV — Apartamentos no centro de Matosinhos</title>
+<meta name="description" content="Trinta apartamentos num edifício novo no coração de Matosinhos. Metro a 3 minutos a pé, praia a 15. Acabamentos Premium e classe energética A.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.home04.pt/">
+
+<!-- Pré-visualização ao partilhar (Open Graph / WhatsApp / Facebook) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Home IV — Apartamentos no centro de Matosinhos">
+<meta property="og:description" content="Trinta apartamentos num edifício novo no coração de Matosinhos. Metro a 3 minutos a pé, praia a 15. Acabamentos Premium e classe energética A.">
+<meta property="og:image" content="https://www.home04.pt/img/hero.jpeg">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:site_name" content="Home IV · ANI-HOME">
+
+<!-- Pré-visualização no Twitter/X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Home IV — Apartamentos no centro de Matosinhos">
+<meta name="twitter:description" content="Trinta apartamentos num edifício novo no coração de Matosinhos. Metro a 3 minutos a pé, praia a 15.">
+<meta name="twitter:image" content="https://www.home04.pt/img/hero.jpeg">
+  <meta property="og:url" content="https://www.home04.pt/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --areia:#EDE8E0;
+    --areia-clara:#F6F3EE;
+    --linho:#FBFAF7;
+    --tinta:#22201C;
+    --tinta-suave:#56514A;
+    --madeira:#9C7B57;
+    --madeira-escura:#6E5538;
+    --oceano:#3E5C68;
+    --oceano-claro:#7C9AA3;
+    --carvao:#1C1B19;
+    --linha:rgba(34,32,28,0.12);
+    --sombra:0 24px 60px -28px rgba(40,35,28,0.45);
+    --raio:3px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
+  }
+  body{
+    margin:0;
+    font-family:'Inter',sans-serif;
+    color:var(--tinta);
+    background:var(--areia);
+    -webkit-font-smoothing:antialiased;
+    line-height:1.5;
+  }
+  h1,h2,h3,h4{font-family:'Cormorant',serif;margin:0;font-weight:500;letter-spacing:-0.01em;}
+  img{display:block;max-width:100%;-webkit-user-drag:none;user-select:none;-webkit-user-select:none;}
+  a{color:inherit;}
+  .eyebrow{
+    font-family:'JetBrains Mono',monospace;
+    text-transform:uppercase;
+    letter-spacing:0.22em;
+    font-size:0.66rem;
+    color:var(--oceano);
+    font-weight:500;
+  }
+  .wrap{max-width:1240px;margin:0 auto;padding:0 36px;}
+  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--oceano);outline-offset:3px;}
+
+  /* header */
+  header{position:fixed;top:0;left:0;right:0;z-index:60;padding:22px 0;transition:all .35s ease;}
+  header.scrolled{background:rgba(246,243,238,.92);backdrop-filter:blur(8px);box-shadow:0 1px 0 var(--linha);padding:14px 0;}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;}
+  .logo{display:flex;align-items:baseline;gap:9px;text-decoration:none;color:var(--linho);transition:color .35s;}
+  header.scrolled .logo{color:var(--tinta);}
+  .logo .mark{font-family:'Cormorant',serif;font-size:1.5rem;font-weight:600;letter-spacing:.02em;}
+  .logo .sub{font-family:'JetBrains Mono',monospace;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;opacity:.8;}
+  nav.primary{display:flex;align-items:center;gap:36px;}
+  nav.primary a{font-size:.9rem;text-decoration:none;color:var(--linho);opacity:.9;transition:color .35s;}
+  header.scrolled nav.primary a{color:var(--tinta-suave);}
+  header.scrolled nav.primary a.btn-solid{color:var(--linho);}
+  nav.primary a:hover{color:var(--madeira);}
+  .btn{font-family:'Inter',sans-serif;font-weight:500;font-size:.86rem;padding:11px 22px;border-radius:var(--raio);border:1.5px solid currentColor;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s ease;white-space:nowrap;}
+  .btn-solid{background:var(--madeira-escura);border-color:var(--madeira-escura);color:var(--linho);}
+  .btn-solid:hover{background:var(--tinta);border-color:var(--tinta);transform:translateY(-1px);}
+  .btn-ghost{background:transparent;color:var(--linho);border-color:rgba(246,243,238,.5);}
+  header.scrolled .btn-ghost{color:var(--tinta);border-color:var(--linha);}
+  .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;}
+  .nav-toggle span{display:block;width:24px;height:2px;background:var(--linho);margin:5px 0;transition:.3s;}
+  header.scrolled .nav-toggle span{background:var(--tinta);}
+
+  /* hero */
+  .hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;overflow:hidden;background:var(--carvao);}
+  .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.82;}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,27,25,.2) 0%,rgba(28,27,25,.15) 45%,rgba(28,27,25,.85) 100%);}
+  .hero-content{position:relative;z-index:2;width:100%;padding:0 0 78px;}
+  .hero .eyebrow{color:var(--areia);display:block;margin-bottom:20px;}
+  .hero h1{color:var(--linho);font-size:clamp(3rem,8vw,6.5rem);line-height:.94;font-weight:500;max-width:14ch;}
+  .hero h1 em{font-style:italic;font-weight:400;color:var(--oceano-claro);}
+  .hero p.lede{color:rgba(246,243,238,.9);font-size:1.08rem;max-width:46ch;margin:26px 0 36px;}
+  .hero-actions{display:flex;gap:16px;flex-wrap:wrap;}
+  .hero-meta{position:absolute;right:36px;bottom:40px;z-index:2;text-align:right;color:rgba(246,243,238,.75);font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.1em;line-height:1.9;}
+
+  .tile-rule{height:0;border-top:1px solid var(--linha);}
+
+  section{padding:108px 0;}
+  .s-areia{background:var(--areia);}
+  .s-clara{background:var(--areia-clara);}
+  .s-linho{background:var(--linho);}
+  .s-escura{background:var(--carvao);color:var(--areia);}
+  .s-escura .eyebrow{color:var(--oceano-claro);}
+
+  .head{display:flex;justify-content:space-between;align-items:flex-end;gap:48px;margin-bottom:62px;flex-wrap:wrap;}
+  .head h2{font-size:clamp(2rem,4vw,3.1rem);max-width:18ch;line-height:1.02;}
+  .head .eyebrow{display:block;margin-bottom:18px;}
+  .head p{max-width:38ch;color:var(--tinta-suave);font-size:.98rem;}
+  .s-escura .head p{color:rgba(237,232,224,.72);}
+
+  /* intro/conceito stats */
+  .lead-text{font-family:'Cormorant',serif;font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.3;font-weight:400;max-width:24ch;}
+  .lead-text em{font-style:italic;color:var(--madeira-escura);}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--linha);margin-top:72px;}
+  .stat{padding:30px 22px 0;border-right:1px solid var(--linha);}
+  .stat:last-child{border-right:none;}
+  .stat .n{font-family:'Cormorant',serif;font-size:2.6rem;font-weight:500;line-height:1;}
+  .stat .l{font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--tinta-suave);margin-top:10px;display:block;}
+
+  /* tipologias */
+  .tipo{display:grid;grid-template-columns:1.05fr 1fr;gap:0;margin-bottom:0;background:var(--linho);box-shadow:var(--sombra);overflow:hidden;}
+  .tipo:not(:last-child){margin-bottom:40px;}
+  .tipo.flip .tipo-plan{order:2;}
+  .tipo-plan{background:var(--areia-clara);display:flex;align-items:center;justify-content:center;padding:48px;}
+  .tipo-plan img{max-height:460px;width:auto;mix-blend-mode:multiply;}
+  .tipo-info{padding:54px 50px;display:flex;flex-direction:column;justify-content:center;}
+  .tipo-info .tag{font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.18em;color:var(--oceano);font-weight:500;text-transform:uppercase;}
+  .tipo-info h3{font-size:2.4rem;margin:12px 0 6px;}
+  .tipo-info .area{color:var(--tinta-suave);font-size:.95rem;margin-bottom:22px;}
+  .tipo-info p{color:var(--tinta-suave);font-size:.96rem;margin:0 0 26px;max-width:42ch;}
+  .tipo-gallery{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;}
+  .ilustrativo-nota{font-family:'Inter',sans-serif;font-size:.78rem;font-style:italic;line-height:1.55;color:var(--tinta-suave);opacity:.7;margin-top:14px;max-width:560px;}
+  .tipo-gallery img{width:calc(33.333% - 7px);height:110px;object-fit:cover;border-radius:var(--raio);cursor:pointer;transition:transform .25s,box-shadow .25s;}
+  .tipo-gallery img:nth-child(n+4){display:none;} /* só as 3 primeiras ficam visíveis no cartão; as restantes só aparecem no lightbox */
+  .tipo-gallery img:hover{transform:translateY(-3px);box-shadow:0 12px 24px -12px rgba(0,0,0,.4);}
+  .tipo-feats{list-style:none;padding:0;margin:0 0 30px;display:flex;flex-direction:column;gap:11px;}
+  .tipo-feats li{font-size:.92rem;color:var(--tinta-suave);padding-left:20px;position:relative;}
+  .tipo-feats li::before{content:"";position:absolute;left:0;top:7px;width:8px;height:8px;background:var(--madeira);border-radius:50%;}
+
+  /* acabamentos band */
+  .finish-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--linha);}
+  .finish{background:var(--areia);padding:42px 34px;display:flex;flex-direction:column;gap:14px;}
+  .finish .ic{width:30px;height:30px;color:var(--oceano);}
+  .finish h4{font-family:'Cormorant',serif;font-size:1.3rem;font-weight:500;}
+  .finish p{margin:0;font-size:.9rem;color:var(--tinta-suave);}
+
+  /* galeria comum */
+  .gal{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:14px;height:560px;}
+  .gal img{width:100%;height:100%;object-fit:cover;border-radius:var(--raio);}
+  .gal .big{grid-row:1/3;}
+  .gal-single{width:100%;border-radius:var(--raio);overflow:hidden;box-shadow:var(--sombra);max-height:620px;}
+  .gal-single img{width:100%;height:100%;max-height:620px;object-fit:cover;display:block;}
+
+  /* disponibilidade */
+  .avail-wrap{overflow-x:auto;border:1px solid var(--linha);border-radius:var(--raio);background:var(--linho);}
+  table.avail{width:100%;border-collapse:collapse;font-size:.9rem;min-width:640px;}
+  table.avail th{font-family:'JetBrains Mono',monospace;font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--tinta-suave);text-align:left;padding:18px 18px;border-bottom:1px solid var(--linha);font-weight:500;}
+  table.avail td{padding:16px 18px;border-bottom:1px solid var(--linha);}
+  table.avail tr:last-child td{border-bottom:none;}
+  table.avail tr:hover td{background:var(--areia-clara);}
+  .pill{font-family:'JetBrains Mono',monospace;font-size:.64rem;letter-spacing:.06em;text-transform:uppercase;padding:5px 11px;border-radius:100px;font-weight:500;display:inline-block;}
+  .pill.disp{background:#E2ECE4;color:#2F6646;}
+  .pill.res{background:#F3E7DA;color:#A1602B;}
+  .pill.vend{background:#EAE7E3;color:#8A847B;}
+  tr.is-vend td{opacity:.6;}
+  .preco-cell{font-family:'Cormorant',serif;font-size:1.25rem;font-weight:600;}
+  .pay-note{margin-top:26px;display:flex;gap:30px;flex-wrap:wrap;font-size:.86rem;color:var(--tinta-suave);}
+  .pay-note span{display:flex;align-items:center;gap:8px;}
+  .pay-note b{font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--oceano);font-weight:500;}
+
+  /* localizacao */
+  .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+  .poi{list-style:none;padding:0;margin:28px 0 0;}
+  .poi li{display:flex;justify-content:space-between;align-items:center;padding:17px 0;border-bottom:1px solid rgba(237,232,224,.18);}
+  .poi li .nm{display:flex;align-items:center;gap:13px;font-size:.98rem;}
+  .poi li .ds{font-family:'JetBrains Mono',monospace;font-size:.82rem;color:var(--oceano-claro);}
+  .pin{width:15px;height:15px;flex:none;color:var(--madeira);}
+  .map-art{position:relative;background:var(--areia-clara);border-radius:var(--raio);aspect-ratio:1/1;overflow:hidden;box-shadow:var(--sombra);}
+  .map-btn{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display:inline-flex;align-items:center;gap:8px;background:var(--carvao);color:var(--linho);font-family:'Inter',sans-serif;font-size:.84rem;font-weight:500;padding:11px 20px;border-radius:100px;text-decoration:none;box-shadow:0 10px 24px -8px rgba(0,0,0,.45);transition:all .2s ease;white-space:nowrap;}
+  .map-btn:hover{background:var(--madeira-escura);transform:translateX(-50%) translateY(-2px);}
+  .map-btn svg{width:16px;height:16px;flex:none;}
+
+  /* contacto */
+  .contact{display:grid;grid-template-columns:.85fr 1.15fr;background:var(--linho);box-shadow:var(--sombra);border-radius:var(--raio);overflow:hidden;}
+  .c-card{background:var(--carvao);color:var(--areia);padding:54px 44px;display:flex;flex-direction:column;gap:24px;}
+  .avatar{width:66px;height:66px;border-radius:50%;background:var(--madeira-escura);display:flex;align-items:center;justify-content:center;font-family:'Cormorant',serif;font-weight:600;font-size:1.4rem;color:var(--linho);}
+  .c-card .nm{font-family:'Cormorant',serif;font-size:1.5rem;font-weight:500;}
+  .c-card .role{font-size:.85rem;color:var(--oceano-claro);margin-top:3px;}
+  .consultores{display:flex;flex-direction:column;gap:26px;}
+  .c-brand{padding-bottom:24px;border-bottom:1px solid rgba(237,232,224,.18);}
+  .c-brand-name{font-family:'Cormorant',serif;font-size:1.9rem;font-weight:600;color:var(--linho);letter-spacing:.02em;line-height:1;}
+  .c-brand-sub{font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--oceano-claro);margin-top:7px;}
+  .c-brand-site{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-family:'Inter',sans-serif;font-size:.8rem;font-weight:500;color:var(--linho);text-decoration:none;border:1.5px solid rgba(237,232,224,.4);border-radius:100px;padding:7px 16px;transition:all .2s ease;}
+  .c-brand-site:hover{background:var(--linho);color:var(--carvao);border-color:var(--linho);}
+  .c-brand-site svg{width:13px;height:13px;}
+  .consultor{display:flex;flex-direction:column;gap:14px;padding-bottom:26px;border-bottom:1px solid rgba(237,232,224,.12);}
+  .consultor:last-child{border-bottom:none;padding-bottom:0;}
+  .consultor .c-nome .nm{font-size:1.35rem;}
+  .consultor .avatar{width:54px;height:54px;font-size:1.2rem;}
+  .c-line{display:flex;align-items:center;gap:13px;font-size:.93rem;color:rgba(237,232,224,.92);text-decoration:none;}
+  .c-line svg{width:16px;height:16px;flex:none;color:var(--oceano-claro);}
+  .c-line:hover{color:var(--linho);}
+  .c-form{padding:54px 48px;display:flex;flex-direction:column;gap:20px;}
+  .field{display:flex;flex-direction:column;gap:7px;}
+  .field label{font-family:'JetBrains Mono',monospace;font-size:.64rem;text-transform:uppercase;letter-spacing:.08em;color:var(--tinta-suave);}
+  .field input,.field textarea,.field select{border:1.5px solid var(--linha);background:var(--areia-clara);padding:13px 15px;font-family:'Inter',sans-serif;font-size:.95rem;color:var(--tinta);border-radius:var(--raio);}
+  .field select{cursor:pointer;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2356514A' d='M6 8 0 0h12z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 15px center;padding-right:38px;}
+  .field input:focus,.field textarea:focus{border-color:var(--oceano);}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  .form-ok{font-size:.9rem;color:var(--oceano);font-weight:500;display:none;}
+  .form-privacy{font-size:.72rem;line-height:1.55;color:var(--tinta-suave);opacity:.65;margin-top:4px;max-width:520px;}
+  .form-ok.show{display:block;}
+
+  footer{background:var(--carvao);color:rgba(237,232,224,.55);padding:40px 0;font-size:.8rem;}
+  .footer-legal{margin-top:22px;padding-top:20px;border-top:1px solid rgba(237,232,224,.12);font-size:.72rem;line-height:1.6;color:rgba(237,232,224,.4);max-width:680px;}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
+  footer .credits{font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.05em;display:flex;gap:22px;flex-wrap:wrap;}
+
+  .fab-wrap{position:fixed;right:26px;bottom:26px;z-index:70;display:flex;flex-direction:column;align-items:flex-end;gap:14px;}
+  .fab{background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 28px -8px rgba(0,0,0,.4);border:none;cursor:pointer;transition:transform .15s;padding:0;}
+  .fab:hover{transform:scale(1.07);}
+  .fab svg{width:28px;height:28px;position:absolute;transition:opacity .2s,transform .2s;}
+  .fab .fab-x{width:24px;height:24px;opacity:0;transform:rotate(-90deg);}
+  .fab-wrap.open .fab-wa{opacity:0;transform:rotate(90deg);}
+  .fab-wrap.open .fab-x{opacity:1;transform:rotate(0);}
+  .fab-menu{display:flex;flex-direction:column;gap:10px;opacity:0;transform:translateY(10px);pointer-events:none;transition:opacity .25s,transform .25s;}
+  .fab-wrap.open .fab-menu{opacity:1;transform:translateY(0);pointer-events:auto;}
+  .fab-item{display:flex;align-items:center;gap:11px;background:var(--linho);border-radius:100px;padding:7px 8px 7px 18px;text-decoration:none;box-shadow:0 8px 22px -8px rgba(0,0,0,.35);transition:transform .15s;}
+  .fab-item:hover{transform:translateX(-3px);}
+  .fab-item-txt{display:flex;flex-direction:column;text-align:right;line-height:1.2;}
+  .fab-item-txt b{font-family:'Inter',sans-serif;font-size:.85rem;font-weight:600;color:var(--tinta);}
+  .fab-item-txt{font-family:'JetBrains Mono',monospace;font-size:.6rem;letter-spacing:.04em;text-transform:uppercase;color:var(--tinta-suave);}
+  .fab-item-ic{flex:none;width:40px;height:40px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;}
+  .fab-item-ic svg{width:22px;height:22px;color:#fff;}
+
+  /* botão de música de fundo */
+  .music-toggle{position:fixed;left:26px;bottom:26px;z-index:70;width:52px;height:52px;border-radius:50%;background:var(--oceano);color:var(--linho);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 28px -8px rgba(0,0,0,.4);transition:transform .15s;padding:0;}
+  .music-toggle:hover{transform:scale(1.07);}
+  .music-toggle svg{width:24px;height:24px;position:absolute;transition:opacity .2s;}
+  .music-toggle .ic-on{opacity:0;}
+  .music-toggle.playing .ic-off{opacity:0;}
+  .music-toggle.playing .ic-on{opacity:1;}
+  @media (max-width:680px){.music-toggle{left:18px;bottom:18px;width:46px;height:46px;}.fab-wrap{right:18px;bottom:18px;}}
+
+  /* lightbox */
+  .lb{position:fixed;inset:0;z-index:90;background:rgba(20,18,16,.94);display:none;align-items:center;justify-content:center;padding:40px;cursor:zoom-out;}
+  .lb.show{display:flex;}
+  .lb img{max-width:92vw;max-height:90vh;border-radius:var(--raio);box-shadow:0 30px 80px rgba(0,0,0,.6);}
+  .lb .close{position:absolute;top:24px;right:30px;color:#fff;font-size:2rem;cursor:pointer;font-family:'Cormorant',serif;z-index:2;}
+  .lb-nav{position:absolute;top:50%;transform:translateY(-50%);color:#fff;font-size:3rem;cursor:pointer;font-family:'Cormorant',serif;width:60px;height:60px;display:flex;align-items:center;justify-content:center;opacity:.7;transition:opacity .2s;user-select:none;z-index:2;}
+  .lb-nav:hover{opacity:1;}
+  .lb-prev{left:18px;}
+  .lb-next{right:18px;}
+  .lb-count{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.8);font-family:'JetBrains Mono',monospace;font-size:.8rem;letter-spacing:.1em;}
+  @media (max-width:600px){
+    .lb-nav{font-size:2.2rem;width:44px;height:44px;}
+    .lb-prev{left:4px;}
+    .lb-next{right:4px;}
+  }
+
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease;}
+  .reveal.in{opacity:1;transform:translateY(0);}
+
+  @media (max-width:960px){
+    .tipo,.tipo.flip{grid-template-columns:1fr;}
+    .tipo.flip .tipo-plan{order:0;}
+    .stats{grid-template-columns:1fr 1fr;}
+    .stat:nth-child(2){border-right:none;}
+    .finish-grid{grid-template-columns:1fr 1fr;}
+    .loc-grid{grid-template-columns:1fr;gap:40px;}
+    .contact{grid-template-columns:1fr;}
+    .gal{height:auto;grid-template-columns:1fr 1fr;grid-template-rows:auto;}
+    .gal .big{grid-row:auto;grid-column:1/3;height:300px;}
+    .gal img{height:200px;}
+  }
+  @media (max-width:600px){
+    .wrap{padding:0 22px;}
+    nav.primary{position:fixed;top:0;right:0;bottom:0;width:80%;max-width:330px;background:var(--carvao);flex-direction:column;align-items:flex-start;padding:96px 32px;gap:28px;transform:translateX(100%);transition:transform .35s;}
+    nav.primary.open{transform:translateX(0);}
+    nav.primary a{color:var(--areia)!important;font-size:1.1rem;}
+    .nav-toggle{display:block;z-index:61;}
+    .stats{grid-template-columns:1fr 1fr;}
+    .finish-grid{grid-template-columns:1fr;}
+    .row2{grid-template-columns:1fr;}
+    .tipo-info{padding:38px 28px;}
+    .tipo-plan{padding:32px;}
+    .hero-meta{display:none;}
+    section{padding:72px 0;}
+  }
+</style>
+</head>
+<body>
+
+<header id="hd">
+  <div class="wrap">
+    <a href="#topo" class="logo"><span class="mark">Home IV</span><span class="sub">Matosinhos</span></a>
+    <nav class="primary" id="nav">
+      <a href="#conceito">Conceito</a>
+      <a href="#tipologias">Tipologias</a>
+      <a href="#acabamentos">Acabamentos</a>
+      <a href="#localizacao">Localização</a>
+      <a href="#disponibilidade">Disponibilidade</a>
+      <a href="#contacto" class="btn btn-solid">Marcar visita</a>
+    </nav>
+    <button class="nav-toggle" id="tg" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero" id="topo">
+  <img class="bg" src="img/hero.jpeg" alt="Interior de apartamento Home IV">
+  <div class="wrap hero-content">
+    <h1>O centro<br>à porta. O mar <em>ao virar da esquina.</em></h1>
+    <p class="lede">Trinta apartamentos num edifício novo no coração de Matosinhos — metro a 3 minutos a pé, praia a 15. Acabamentos Premium, classe energética A.</p>
+    <div class="hero-actions">
+      <a href="#tipologias" class="btn btn-solid">Ver tipologias</a>
+      <a href="#contacto" class="btn btn-ghost">Marcar visita</a>
+    </div>
+  </div>
+  <div class="hero-meta">
+    Rua Dom Nuno Álvares Pereira, 4<br>
+    4450-031 Matosinhos<br>
+    Classe energética A · 8 pisos
+  </div>
+</section>
+
+<section class="s-areia" id="conceito">
+  <div class="wrap">
+    <div class="head reveal">
+      <div>
+        <span class="eyebrow">O conceito</span>
+        <h2>Viver leve, no sítio certo.</h2>
+      </div>
+      <p>Apartamentos desenhados ao detalhe, onde cada metro conta. Madeira, pedra e luz. Uma base serena para quem quer estar no centro de tudo.</p>
+    </div>
+    <p class="lead-text reveal">Um edifício intimista, com <em>30 frações</em> pensadas para quem valoriza a centralidade: jovens profissionais, investimento para arrendamento, ou um pied-à-terre à beira-mar.</p>
+    <div class="stats reveal">
+      <div class="stat"><span class="n">3</span><span class="l">Layouts diferentes</span></div>
+      <div class="stat"><span class="n">A</span><span class="l">Classe energética</span></div>
+      <div class="stat"><span class="n">30</span><span class="l">Apartamentos</span></div>
+      <div class="stat"><span class="n">190m</span><span class="l">Até ao metro</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="s-clara" id="tipologias">
+  <div class="wrap">
+    <div class="head reveal">
+      <div>
+        <span class="eyebrow">Tipologias</span>
+        <h2>Três plantas, o mesmo cuidado.</h2>
+      </div>
+      <p>30 frações com varanda, terraço ou jardim consoante a posição, arrumos privativos e acabamentos Premium.</p>
+      <p class="ilustrativo-nota">Imagens 3D de caráter meramente ilustrativo. O mobiliário, a decoração e os adornos não estão incluídos. Os acabamentos podem sofrer alterações face ao apresentado.</p>
+    </div>
+
+    <!-- T0 Pequeno -->
+    <div class="tipo reveal">
+      <div class="tipo-plan"><img src="img/pequeno/planta.jpeg" alt="Planta T0 Pequeno"></div>
+      <div class="tipo-info">
+        <span class="tag">Tipo 1 · 38,6 m²</span>
+        <h3>O essencial, bem resolvido</h3>
+        <p class="area">Cozinha linear · quarto com divisória de vidro · varanda</p>
+        <p>O layout mais eficiente: zona de dia e de noite separadas por um painel de vidro com caixilho preto, que deixa a luz atravessar todo o apartamento.</p>
+        <div class="tipo-gallery">
+          <img src="img/pequeno/sala1.jpeg" alt="Sala de estar" loading="lazy">
+          <img src="img/pequeno/sala1b.png" alt="Sala de estar, vista para a zona de jantar" loading="lazy">
+          <img src="img/pequeno/cozinha.png" alt="Cozinha" loading="lazy">
+          <img src="img/pequeno/quarto1.jpeg" alt="Quarto" loading="lazy">
+          <img src="img/pequeno/quarto1b.png" alt="Quarto, vista alternativa" loading="lazy">
+          <img src="img/pequeno/quarto1c.png" alt="Quarto, vista alternativa" loading="lazy">
+          <img src="img/pequeno/quarto1d.jpeg" alt="Quarto, vista alternativa" loading="lazy">
+          <img src="img/pequeno/quarto1e.jpeg" alt="Quarto, vista alternativa" loading="lazy">
+          <img src="img/pequeno/wc.jpeg" alt="Casa de banho" loading="lazy">
+          <img src="img/pequeno/hall.png" alt="Corredor e cozinha" loading="lazy">
+        </div>
+        <ul class="tipo-feats">
+          <li>Divisória de vidro entre sala e quarto</li>
+          <li>Cozinha equipada com placa e forno encastrados</li>
+          <li>Casa de banho com base de duche ao nível do chão</li>
+        </ul>
+        <p style="font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.06em;color:var(--tinta-suave);margin:0;">Frações: 3.1 · 4.1 · 5.1 · 6.1 · 7.1 · 8.1</p>
+      </div>
+    </div>
+
+    <!-- T0 Médio -->
+    <div class="tipo flip reveal">
+      <div class="tipo-plan"><img src="img/medio/planta.jpeg" alt="Planta T0 Médio"></div>
+      <div class="tipo-info">
+        <span class="tag">Tipo 2 · 48,2 m²</span>
+        <h3>Mais espaço para receber</h3>
+        <p class="area">Sala e cozinha em L · quarto fechado · varanda</p>
+        <p>Uma zona social mais generosa, com cozinha em open-space. O quarto fecha-se com porta de correr e painel de vidro, para privacidade total quando se quer.</p>
+        <div class="tipo-gallery">
+          <img src="img/medio/sala1.png" alt="Sala" loading="lazy">
+          <img src="img/medio/cozinha.png" alt="Cozinha" loading="lazy">
+          <img src="img/medio/quarto1.png" alt="Quarto" loading="lazy">
+          <img src="img/medio/quarto2.jpeg" alt="Quarto, vista a partir do corredor" loading="lazy">
+          <img src="img/medio/wc1.jpeg" alt="Casa de banho" loading="lazy">
+          <img src="img/medio/wc2.jpeg" alt="Casa de banho, vista alternativa" loading="lazy">
+          <img src="img/medio/hall.jpeg" alt="Hall de entrada" loading="lazy">
+        </div>
+        <ul class="tipo-feats">
+          <li>Cozinha com bancada em Krion ou equivalente</li>
+          <li>Quarto isolável com porta de correr</li>
+          <li>Roupeiro embutido</li>
+        </ul>
+        <p style="font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.06em;color:var(--tinta-suave);margin:0;">Frações: 3.2 · 4.2 · 5.2 · 6.2 · 7.2 · 8.2</p>
+      </div>
+    </div>
+
+    <!-- T0 Maior -->
+    <div class="tipo reveal">
+      <div class="tipo-plan"><img src="img/maior/planta.jpeg" alt="Planta T0 Maior"></div>
+      <div class="tipo-info">
+        <span class="tag">Tipo 3 · 49,0 m²</span>
+        <h3>O mais versátil (T2 Smart)</h3>
+        <p class="area">Sala e cozinha aberta · península com bancada Krion · zona de dormir ampla</p>
+        <p>A fração de maior área, com cozinha em L e península com bancada em Krion, zona de estar ampla e uma zona de dormir espaçosa. Ideal para quem quer um espaço que vive como muito mais.</p>
+        <div class="tipo-gallery">
+          <img src="img/maior/sala1.png" alt="Sala de estar" loading="lazy">
+          <img src="img/maior/sala2.jpeg" alt="Sala, vista a partir da cozinha" loading="lazy">
+          <img src="img/maior/cozinha.png" alt="Cozinha em península" loading="lazy">
+          <img src="img/maior/quarto1.png" alt="Zona de dormir" loading="lazy">
+          <img src="img/maior/quarto1b.png" alt="Zona de dormir, vista alternativa" loading="lazy">
+          <img src="img/maior/quarto2.jpeg" alt="Segundo quarto" loading="lazy">
+          <img src="img/maior/quarto2b.jpeg" alt="Segundo quarto, vista alternativa" loading="lazy">
+        </div>
+        <ul class="tipo-feats">
+          <li>Cozinha em península com bancada em Krion ou equivalente</li>
+          <li>Zona de estar autónoma da zona de dormir</li>
+          <li>Arrumação à medida</li>
+        </ul>
+        <p style="font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.06em;color:var(--tinta-suave);margin:0;">Frações: 2.3 · 3.3 · 4.3 · 5.3 · 6.3 · 7.3 · 8.3</p>
+      </div>
+    </div>
+
+    <!-- Tipo 4 (espelhada da Tipo 1) -->
+    <div class="tipo flip reveal">
+      <div class="tipo-plan"><img src="img/pequeno/planta-tipo4.png" alt="Planta Tipo 4 (espelhada)"></div>
+      <div class="tipo-info">
+        <span class="tag">Tipo 4 · 38,1 m²</span>
+        <h3>O mesmo layout, ao contrário</h3>
+        <p class="area">Versão espelhada · cozinha linear · quarto com divisória de vidro · varanda</p>
+        <p>A planta da Tipo 1 em espelho, na ala oposta do piso. O mesmo conceito eficiente e luminoso, com a disposição invertida para tirar partido da orientação da fração.</p>
+        <div class="tipo-gallery">
+          <img src="img/pequeno/sala1.jpeg" alt="Sala de estar" loading="lazy">
+          <img src="img/pequeno/sala1b.png" alt="Sala de estar, vista para a zona de jantar" loading="lazy">
+          <img src="img/pequeno/cozinha.png" alt="Cozinha" loading="lazy">
+          <img src="img/pequeno/quarto1.jpeg" alt="Quarto" loading="lazy">
+          <img src="img/pequeno/quarto1b.png" alt="Quarto, vista alternativa" loading="lazy">
+          <img src="img/pequeno/quarto1c.png" alt="Quarto, vista alternativa" loading="lazy">
+          <img src="img/pequeno/quarto1d.jpeg" alt="Quarto, vista alternativa" loading="lazy">
+          <img src="img/pequeno/quarto1e.jpeg" alt="Quarto, vista alternativa" loading="lazy">
+          <img src="img/pequeno/wc.jpeg" alt="Casa de banho" loading="lazy">
+          <img src="img/pequeno/hall.png" alt="Corredor e cozinha" loading="lazy">
+        </div>
+        <ul class="tipo-feats">
+          <li>Divisória de vidro entre sala e quarto</li>
+          <li>Cozinha equipada com placa e forno encastrados</li>
+          <li>Casa de banho com base de duche ao nível do chão</li>
+        </ul>
+        <p style="font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.06em;color:var(--tinta-suave);margin:0;">Frações: 2.4 · 3.4 · 4.4 · 5.4 · 6.4 · 7.4 · 8.4</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="s-linho" id="acabamentos">
+  <div class="wrap">
+    <div class="head reveal">
+      <div>
+        <span class="eyebrow">Acabamentos &amp; comodidades</span>
+        <h2>Os detalhes que se sentem todos os dias.</h2>
+      </div>
+    </div>
+  </div>
+  <div class="finish-grid reveal">
+    <div class="finish">
+      <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+      <h4>Pavimento em soalho vinílico</h4>
+      <p>Soalho vinílico nas habitações, com rodapé em contraplacado marítimo.</p>
+    </div>
+    <div class="finish">
+      <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="8" rx="2"/><path d="M7 17v1M12 17v2M17 17v1"/><line x1="6" y1="9" x2="14" y2="9"/></svg>
+      <h4>Ar condicionado embutido</h4>
+      <p>Climatização por ar condicionado embutido e bomba de calor para aquecimento de águas.</p>
+    </div>
+    <div class="finish">
+      <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>
+      <h4>Painel solar</h4>
+      <p>Produção de energia com painel solar, reforçando a eficiência de cada fração.</p>
+    </div>
+    <div class="finish">
+      <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+      <h4>Cozinhas equipadas</h4>
+      <p>Móveis termolaminados, bancadas em Krion ou equivalente, com forno, micro-ondas, placa, exaustor, máquina de lavar louça e frigorífico.</p>
+    </div>
+    <div class="finish">
+      <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21c4-3.5 7-6.8 7-11a7 7 0 1 0-14 0c0 4.2 3 7.5 7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>
+      <h4>Instalações sanitárias</h4>
+      <p>Revestimento cerâmico, móvel suspenso com lavatório, base de duche com resguardo em vidro e loiças e torneiras GROHE ou equivalente.</p>
+    </div>
+    <div class="finish">
+      <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h16M4 17h16"/><line x1="8" y1="4" x2="8" y2="20"/></svg>
+      <h4>Estores elétricos</h4>
+      <p>Estores elétricos em alumínio com isolamento térmico, comandados a partir do interior.</p>
+    </div>
+    <div class="finish">
+      <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="3" width="16" height="18" rx="1"/><line x1="12" y1="3" x2="12" y2="21"/><line x1="4" y1="12" x2="20" y2="12"/></svg>
+      <h4>Caixilharia com vidro duplo</h4>
+      <p>Caixilharia em alumínio com vidro duplo e corte térmico, para isolamento térmico e acústico.</p>
+    </div>
+    <div class="finish">
+      <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+      <h4>Segurança</h4>
+      <p>Porta de segurança e vídeoporteiro com ligação wi-fi em todas as frações.</p>
+    </div>
+  </div>
+</section>
+
+<section class="s-areia">
+  <div class="wrap">
+    <div class="head reveal">
+      <div>
+        <span class="eyebrow">Zonas comuns</span>
+        <h2>A chegada também faz parte de casa.</h2>
+      </div>
+      <p>Halls comuns com pavimentos em pedra natural e cerâmica, paredes e tetos em gesso cartonado pintado.</p>
+    </div>
+    <div class="gal-single reveal">
+      <img src="img/comum-elevadores.jpeg" alt="Átrio dos elevadores" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="s-escura" id="localizacao">
+  <div class="wrap loc-grid">
+    <div class="reveal">
+      <span class="eyebrow">Localização</span>
+      <h2 style="font-size:clamp(2rem,4vw,3rem);margin:16px 0 14px;">No centro de Matosinhos,<br>a um passo do mar.</h2>
+      <p style="color:rgba(237,232,224,.72);max-width:42ch;">Junto à Câmara, à Biblioteca e ao Parque Basílio Teles. Com a Linha A do metro a três minutos a pé, o centro do Porto fica a uma viagem direta.</p>
+      <ul class="poi">
+        <li><span class="nm"><svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-7.1-7-12a7 7 0 1 1 14 0c0 4.9-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Metro Câmara de Matosinhos</span><span class="ds">3 min a pé</span></li>
+        <li><span class="nm"><svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-7.1-7-12a7 7 0 1 1 14 0c0 4.9-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Praia de Matosinhos</span><span class="ds">15 min a pé</span></li>
+        <li><span class="nm"><svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-7.1-7-12a7 7 0 1 1 14 0c0 4.9-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Mercado Municipal</span><span class="ds">5 min a pé</span></li>
+        <li><span class="nm"><svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-7.1-7-12a7 7 0 1 1 14 0c0 4.9-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Centro do Porto (metro)</span><span class="ds">~20 min</span></li>
+        <li><span class="nm"><svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-7.1-7-12a7 7 0 1 1 14 0c0 4.9-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Aeroporto Sá Carneiro</span><span class="ds">22 min de carro</span></li>
+      </ul>
+    </div>
+    <div class="map-art reveal">
+      <svg viewBox="0 0 400 400" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <rect width="400" height="400" fill="#F6F3EE"/>
+        <path d="M0 300 Q120 270 210 312 T400 296 V400 H0 Z" fill="#7C9AA3" opacity=".4"/>
+        <path d="M0 320 Q120 292 210 332 T400 318 V400 H0 Z" fill="#3E5C68" opacity=".3"/>
+        <g stroke="#22201C" stroke-opacity=".13" stroke-width="2">
+          <line x1="60" y1="0" x2="48" y2="400"/>
+          <line x1="160" y1="0" x2="140" y2="400"/>
+          <line x1="0" y1="120" x2="400" y2="104"/>
+          <line x1="0" y1="210" x2="400" y2="196"/>
+        </g>
+        <line x1="0" y1="160" x2="400" y2="150" stroke="#9C7B57" stroke-width="3" stroke-dasharray="7 6" opacity=".7"/>
+        <circle cx="150" cy="180" r="9" fill="#6E5538"/>
+        <circle cx="150" cy="180" r="17" fill="#6E5538" opacity=".25"/>
+        <text x="170" y="184" font-family="JetBrains Mono, monospace" font-size="10" fill="#22201C" letter-spacing="1">HOME IV</text>
+        <text x="300" y="146" font-family="JetBrains Mono, monospace" font-size="8" fill="#3E5C68" letter-spacing="1">METRO</text>
+        <text x="40" y="360" font-family="JetBrains Mono, monospace" font-size="8" fill="#3E5C68" letter-spacing="1">ATLÂNTICO</text>
+      </svg>
+      <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=41.179813,-8.679422" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-7.1-7-12a7 7 0 1 1 14 0c0 4.9-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        Ver no Google Maps
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="s-clara" id="disponibilidade">
+  <div class="wrap">
+    <div class="head reveal">
+      <div>
+        <span class="eyebrow">Disponibilidade</span>
+        <h2>Frações disponíveis.</h2>
+      </div>
+      <p>Mapa completo de frações conforme tabela comercial. Disponibilidade sujeita a confirmação no momento do contacto.</p>
+    </div>
+    <div class="avail-wrap reveal">
+      <table class="avail">
+        <thead>
+          <tr><th>Piso</th><th>Fração</th><th>Tipologia</th><th>Área bruta</th><th>Exterior</th><th>Preço</th><th>Estado</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>R/C</td><td>1.1</td><td>T0</td><td>135,80 m²</td><td>Terraço + jardim</td><td class="preco-cell">350.000 €</td><td><span class="pill res">Reservado</span></td></tr>
+          <tr><td>R/C</td><td>1.2</td><td>T0</td><td>138,30 m²</td><td>Terraço + jardim</td><td class="preco-cell">350.000 €</td><td><span class="pill res">Reservado</span></td></tr>
+          <tr><td>1º</td><td>2.1</td><td>T0</td><td>72,60 m²</td><td>Terraço</td><td class="preco-cell">250.000 €</td><td><span class="pill res">Reservado</span></td></tr>
+          <tr class="is-vend"><td>1º</td><td>2.2</td><td>T0</td><td>76,20 m²</td><td>Terraço</td><td class="preco-cell">—</td><td><span class="pill vend">Vendido</span></td></tr>
+          <tr class="is-vend"><td>1º</td><td>2.3</td><td>T0</td><td>53,90 m²</td><td>Varanda</td><td class="preco-cell">—</td><td><span class="pill vend">Vendido</span></td></tr>
+          <tr class="is-vend"><td>1º</td><td>2.4</td><td>T0</td><td>44,20 m²</td><td>Varanda</td><td class="preco-cell">—</td><td><span class="pill vend">Vendido</span></td></tr>
+          <tr><td>2º</td><td>3.1</td><td>T0</td><td>44,70 m²</td><td>Varanda</td><td class="preco-cell">225.000 €</td><td><span class="pill disp">Disponível</span></td></tr>
+          <tr class="is-vend"><td>2º</td><td>3.2</td><td>T0</td><td>53,10 m²</td><td>Varanda</td><td class="preco-cell">—</td><td><span class="pill vend">Vendido</span></td></tr>
+          <tr class="is-vend"><td>2º</td><td>3.3</td><td>T0</td><td>53,90 m²</td><td>Varanda</td><td class="preco-cell">—</td><td><span class="pill vend">Vendido</span></td></tr>
+          <tr class="is-vend"><td>2º</td><td>3.4</td><td>T0</td><td>44,20 m²</td><td>Varanda</td><td class="preco-cell">—</td><td><span class="pill vend">Vendido</span></td></tr>
+          <tr><td>3º</td><td>4.1</td><td>T0</td><td>44,70 m²</td><td>Varanda</td><td class="preco-cell">230.000 €</td><td><span class="pill disp">Disponível</span></td></tr>
+          <tr><td>3º</td><td>4.2</td><td>T0</td><td>53,10 m²</td><td>Varanda</td><td class="preco-cell">245.000 €</td><td><span class="pill disp">Disponível</span></td></tr>
+          <tr class="is-vend"><td>3º</td><td>4.3</td><td>T0</td><td>53,90 m²</td><td>Varanda</td><td class="preco-cell">—</td><td><span class="pill vend">Vendido</span></td></tr>
+          <tr><td>3º</td><td>4.4</td><td>T0</td><td>44,20 m²</td><td>Varanda</td><td class="preco-cell">225.000 €</td><td><span class="pill disp">Disponível</span></td></tr>
+          <tr><td>4º</td><td>5.1</td><td>T0</td><td>44,70 m²</td><td>Varanda</td><td class="preco-cell">235.000 €</td><td><span class="pill disp">Disponível</span></td></tr>
+          <tr><td>4º</td><td>5.2</td><td>T0</td><td>53,10 m²</td><td>Varanda</td><td class="preco-cell">250.000 €</td><td><span class="pill disp">Disponível</span></td></tr>
+          <tr class="is-vend"><td>4º</td><td>5.3</td><td>T0</td><td>53,90 m²</td><td>Varanda</td><td class="preco-cell">—</td><td><span class="pill vend">Vendido</span></td></tr>
+          <tr class="is-vend"><td>4º</td><td>5.4</td><td>T0</td><td>44,20 m²</td><td>Varanda</td><td class="preco-cell">—</td><td><span class="pill vend">Vendido</span></td></tr>
+          <tr><td>5º</td><td>6.1</td><td>T0</td><td>44,70 m²</td><td>Varanda</td><td class="preco-cell">240.000 €</td><td><span class="pill disp">Disponível</span></td></tr>
+          <tr><td>5º</td><td>6.2</td><td>T0</td><td>53,10 m²</td><td>Varanda</td><td class="preco-cell">255.000 €</td><td><span class="pill disp">Disponível</span></td></tr>
+          <tr class="is-vend"><td>5º</td><td>6.3</td><td>T0</td><td>53,90 m²</td><td>Varanda</td><td class="preco-cell">—</td><td><span class="pill vend">Vendido</span></td></tr>
+          <tr class="is-vend"><td>5º</td><td>6.4</td><td>T0</td><td>44,20 m²</td><td>Varanda</td><td class="preco-cell">—</td><td><span class="pill vend">Vendido</span></td></tr>
+          <tr class="is-vend"><td>6º</td><td>7.1</td><td>T0</td><td>44,70 m²</td><td>Varanda</td><td class="preco-cell">—</td><td><span class="pill vend">Vendido</span></td></tr>
+          <tr class="is-vend"><td>6º</td><td>7.2</td><td>T0</td><td>53,10 m²</td><td>Varanda</td><td class="preco-cell">—</td><td><span class="pill vend">Vendido</span></td></tr>
+          <tr class="is-vend"><td>6º</td><td>7.3</td><td>T0</td><td>53,90 m²</td><td>Varanda</td><td class="preco-cell">—</td><td><span class="pill vend">Vendido</span></td></tr>
+          <tr class="is-vend"><td>6º</td><td>7.4</td><td>T0</td><td>44,20 m²</td><td>Varanda</td><td class="preco-cell">—</td><td><span class="pill vend">Vendido</span></td></tr>
+          <tr class="is-vend"><td>7º</td><td>8.1</td><td>T0</td><td>44,70 m²</td><td>Varanda</td><td class="preco-cell">—</td><td><span class="pill vend">Vendido</span></td></tr>
+          <tr class="is-vend"><td>7º</td><td>8.2</td><td>T0</td><td>53,10 m²</td><td>Varanda</td><td class="preco-cell">—</td><td><span class="pill vend">Vendido</span></td></tr>
+          <tr class="is-vend"><td>7º</td><td>8.3</td><td>T0</td><td>53,90 m²</td><td>Varanda</td><td class="preco-cell">—</td><td><span class="pill vend">Vendido</span></td></tr>
+          <tr class="is-vend"><td>7º</td><td>8.4</td><td>T0</td><td>44,20 m²</td><td>Varanda</td><td class="preco-cell">—</td><td><span class="pill vend">Vendido</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pay-note reveal">
+      <span><b>20%</b> na assinatura do CPCV</span>
+      <span><b>15%</b> a 90 dias</span>
+      <span><b>15%</b> a 180 dias</span>
+      <span><b>50%</b> na escritura</span>
+    </div>
+  </div>
+</section>
+
+<section class="s-areia" id="contacto">
+  <div class="wrap">
+    <div class="head reveal">
+      <div>
+        <span class="eyebrow">Contacto</span>
+        <h2>Vamos marcar a sua visita.</h2>
+      </div>
+      <p>Resposta em até 24h. Plantas, memória descritiva e condições de pagamento enviadas após o primeiro contacto.</p>
+    </div>
+    <div class="contact reveal">
+      <div class="c-card">
+        <div class="c-brand">
+          <div class="c-brand-name">ANI-HOME</div>
+          <div class="c-brand-sub">Negócios Imobiliários</div>
+          <a class="c-brand-site" href="https://www.ani-home.pt" target="_blank" rel="noopener">Visitar site
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+        <div class="consultores">
+          <div class="consultor">
+            <div class="avatar">AS</div>
+            <div class="c-nome">
+              <div class="nm">António Severo</div>
+              <div class="role">Diretor Comercial · ANI-HOME</div>
+            </div>
+            <a class="c-line" href="tel:+351932819337"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.91.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92Z"/></svg>+351 932 819 337</a>
+            <a class="c-line" href="mailto:antonio.severo@ani-home.pt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>antonio.severo@ani-home.pt</a>
+            <a class="c-line" href="https://wa.me/351932819337" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2Zm5.6 14.1c-.2.6-1.4 1.2-1.9 1.2-.5.1-1.1.1-1.8-.1a13.6 13.6 0 0 1-4.7-3 13.9 13.9 0 0 1-2.6-3.8c-.4-.9-.2-1.6.1-2.1.2-.3.6-.9 1.1-.9.2 0 .4 0 .6.1.3.1.5.4.7.9l.5 1.3c.1.3.1.6-.1.8l-.4.5c-.1.2-.2.4 0 .7.5 1 1.6 2.1 2.7 2.7.2.1.4.1.6-.1l.5-.5c.2-.2.5-.2.7-.1l1.3.6c.4.2.7.4.8.7.1.2.1.5 0 .8Z"/></svg>WhatsApp</a>
+          </div>
+          <div class="consultor">
+            <div class="avatar">RM</div>
+            <div class="c-nome">
+              <div class="nm">Ricardo Moreira</div>
+              <div class="role">Consultor · ANI-HOME</div>
+            </div>
+            <a class="c-line" href="tel:+351915424022"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.91.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92Z"/></svg>+351 915 424 022</a>
+            <a class="c-line" href="mailto:ricardo.moreira@ani-home.pt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>ricardo.moreira@ani-home.pt</a>
+            <a class="c-line" href="https://wa.me/351915424022" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2Zm5.6 14.1c-.2.6-1.4 1.2-1.9 1.2-.5.1-1.1.1-1.8-.1a13.6 13.6 0 0 1-4.7-3 13.9 13.9 0 0 1-2.6-3.8c-.4-.9-.2-1.6.1-2.1.2-.3.6-.9 1.1-.9.2 0 .4 0 .6.1.3.1.5.4.7.9l.5 1.3c.1.3.1.6-.1.8l-.4.5c-.1.2-.2.4 0 .7.5 1 1.6 2.1 2.7 2.7.2.1.4.1.6-.1l.5-.5c.2-.2.5-.2.7-.1l1.3.6c.4.2.7.4.8.7.1.2.1.5 0 .8Z"/></svg>WhatsApp</a>
+            <a class="c-line" href="https://www.instagram.com/ricardomoreira_ani_home/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>@ricardomoreira_ani_home</a>
+            <a class="c-line" href="https://www.facebook.com/RicardoMoreiraAniHome/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/></svg>RicardoMoreiraAniHome</a>
+          </div>
+        </div>
+        <div style="margin-top:auto;font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.06em;color:rgba(237,232,224,.5);line-height:1.8;">
+          R. DOM NUNO ÁLVARES PEREIRA, 4<br>4450-031 MATOSINHOS
+        </div>
+      </div>
+      <form class="c-form" id="form">
+        <div class="row2">
+          <div class="field"><label for="n">Nome</label><input id="n" type="text" required></div>
+          <div class="field"><label for="t">Telefone</label><input id="t" type="tel" required></div>
+        </div>
+        <div class="field"><label for="e">Email</label><input id="e" type="email" required></div>
+        <div class="field"><label for="m">Mensagem</label><textarea id="m" rows="4">Gostaria de saber mais sobre as frações disponíveis e agendar uma visita.</textarea></div>
+        <button type="submit" class="btn btn-solid" style="align-self:flex-start;">Enviar pedido</button>
+        <span class="form-ok" id="ok">Abrimos o seu email com o pedido pronto a enviar. Caso não abra, contacte-nos por telefone ou WhatsApp.</span>
+        <p class="form-privacy">Os dados fornecidos destinam-se exclusivamente a dar resposta ao seu pedido de contacto e não serão partilhados com terceiros. Ao enviar, autoriza o seu tratamento para essa finalidade, nos termos do RGPD.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Home IV · Matosinhos</span>
+    <span class="credits"><span>PROMOÇÃO ANI-ENGENHARIA</span><span>PROJETO JOÃO PIRES GUERRA</span><span>COMERCIALIZAÇÃO ANI-HOME</span></span>
+  </div>
+  <div class="wrap footer-legal">
+    Imagens 3D de caráter meramente ilustrativo. O mobiliário, a decoração e os adornos não estão incluídos. Os acabamentos podem sofrer alterações face ao apresentado.
+  </div>
+</footer>
+
+<audio id="bgMusic" loop preload="none">
+  <source src="audio/musica-fundo.mp3" type="audio/mpeg">
+</audio>
+<button class="music-toggle" id="musicToggle" aria-label="Ligar/desligar música de fundo">
+  <svg class="ic-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+  <svg class="ic-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18 6a9 9 0 0 1 0 12"/></svg>
+</button>
+
+<div class="fab-wrap" id="fabWrap">
+  <div class="fab-menu" id="fabMenu">
+    <a class="fab-item" href="https://wa.me/351932819337" target="_blank" rel="noopener">
+      <span class="fab-item-txt"><b>António Severo</b>Diretor Comercial</span>
+      <span class="fab-item-ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2Zm5.6 14.1c-.2.6-1.4 1.2-1.9 1.2-.5.1-1.1.1-1.8-.1a13.6 13.6 0 0 1-4.7-3 13.9 13.9 0 0 1-2.6-3.8c-.4-.9-.2-1.6.1-2.1.2-.3.6-.9 1.1-.9.2 0 .4 0 .6.1.3.1.5.4.7.9l.5 1.3c.1.3.1.6-.1.8l-.4.5c-.1.2-.2.4 0 .7.5 1 1.6 2.1 2.7 2.7.2.1.4.1.6-.1l.5-.5c.2-.2.5-.2.7-.1l1.3.6c.4.2.7.4.8.7.1.2.1.5 0 .8Z"/></svg></span>
+    </a>
+    <a class="fab-item" href="https://wa.me/351915424022" target="_blank" rel="noopener">
+      <span class="fab-item-txt"><b>Ricardo Moreira</b>Consultor</span>
+      <span class="fab-item-ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2Zm5.6 14.1c-.2.6-1.4 1.2-1.9 1.2-.5.1-1.1.1-1.8-.1a13.6 13.6 0 0 1-4.7-3 13.9 13.9 0 0 1-2.6-3.8c-.4-.9-.2-1.6.1-2.1.2-.3.6-.9 1.1-.9.2 0 .4 0 .6.1.3.1.5.4.7.9l.5 1.3c.1.3.1.6-.1.8l-.4.5c-.1.2-.2.4 0 .7.5 1 1.6 2.1 2.7 2.7.2.1.4.1.6-.1l.5-.5c.2-.2.5-.2.7-.1l1.3.6c.4.2.7.4.8.7.1.2.1.5 0 .8Z"/></svg></span>
+    </a>
+  </div>
+  <button class="fab" id="fabBtn" aria-label="Contactar via WhatsApp">
+    <svg class="fab-wa" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2Zm5.6 14.1c-.2.6-1.4 1.2-1.9 1.2-.5.1-1.1.1-1.8-.1a13.6 13.6 0 0 1-4.7-3 13.9 13.9 0 0 1-2.6-3.8c-.4-.9-.2-1.6.1-2.1.2-.3.6-.9 1.1-.9.2 0 .4 0 .6.1.3.1.5.4.7.9l.5 1.3c.1.3.1.6-.1.8l-.4.5c-.1.2-.2.4 0 .7.5 1 1.6 2.1 2.7 2.7.2.1.4.1.6-.1l.5-.5c.2-.2.5-.2.7-.1l1.3.6c.4.2.7.4.8.7.1.2.1.5 0 .8Z"/></svg>
+    <svg class="fab-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+  </button>
+</div>
+
+<div class="lb" id="lb">
+  <span class="close" id="lbClose">&times;</span>
+  <span class="lb-nav lb-prev" id="lbPrev">&#8249;</span>
+  <img id="lbimg" src="" alt="">
+  <span class="lb-nav lb-next" id="lbNext">&#8250;</span>
+  <span class="lb-count" id="lbCount"></span>
+</div>
+
+<script>
+  const hd=document.getElementById('hd');
+  addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>40));
+  const tg=document.getElementById('tg'),nav=document.getElementById('nav');
+  tg.onclick=()=>nav.classList.toggle('open');
+  nav.querySelectorAll('a').forEach(a=>a.onclick=()=>nav.classList.remove('open'));
+
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // lightbox com navegação por grupos
+  const lb=document.getElementById('lb'),lbi=document.getElementById('lbimg');
+  const lbCount=document.getElementById('lbCount');
+  let group=[],idx=0;
+
+  function showImg(){
+    lbi.src=group[idx];
+    lbCount.textContent=(idx+1)+' / '+group.length;
+    const single=group.length<2;
+    document.getElementById('lbPrev').style.display=single?'none':'flex';
+    document.getElementById('lbNext').style.display=single?'none':'flex';
+    lbCount.style.display=single?'none':'block';
+  }
+  function openLb(imgs,start){
+    group=imgs;idx=start;
+    lb.classList.add('show');
+    showImg();
+  }
+  function step(dir){
+    idx=(idx+dir+group.length)%group.length;
+    showImg();
+  }
+
+  // cada galeria/planta define o seu próprio grupo de imagens
+  document.querySelectorAll('.tipo').forEach(tipo=>{
+    const imgs=[...tipo.querySelectorAll('.tipo-plan img,.tipo-gallery img')];
+    const srcs=imgs.map(i=>i.src);
+    imgs.forEach((im,i)=>{
+      im.style.cursor='zoom-in';
+      im.onclick=e=>{e.stopPropagation();openLb(srcs,i);};
+    });
+  });
+  // zonas comuns (imagem única)
+  document.querySelectorAll('.gal-single img,.gal img').forEach(im=>{
+    im.style.cursor='zoom-in';
+    im.onclick=e=>{e.stopPropagation();openLb([im.src],0);};
+  });
+
+  document.getElementById('lbPrev').onclick=e=>{e.stopPropagation();step(-1);};
+  document.getElementById('lbNext').onclick=e=>{e.stopPropagation();step(1);};
+  document.getElementById('lbClose').onclick=()=>lb.classList.remove('show');
+  lb.onclick=()=>lb.classList.remove('show');
+  lbi.onclick=e=>e.stopPropagation();
+
+  document.addEventListener('keydown',e=>{
+    if(!lb.classList.contains('show'))return;
+    if(e.key==='Escape')lb.classList.remove('show');
+    if(e.key==='ArrowLeft')step(-1);
+    if(e.key==='ArrowRight')step(1);
+  });
+
+  // proteção de imagens (dificultar download)
+  document.querySelectorAll('img').forEach(im=>{
+    im.addEventListener('contextmenu',e=>e.preventDefault());
+    im.addEventListener('dragstart',e=>e.preventDefault());
+    im.setAttribute('draggable','false');
+  });
+  lb.addEventListener('contextmenu',e=>e.preventDefault());
+
+  // música de fundo
+  const bgMusic=document.getElementById('bgMusic'),musicToggle=document.getElementById('musicToggle');
+  bgMusic.volume=0.45;
+  musicToggle.onclick=()=>{
+    if(bgMusic.paused){
+      bgMusic.play().catch(()=>{});
+      musicToggle.classList.add('playing');
+    }else{
+      bgMusic.pause();
+      musicToggle.classList.remove('playing');
+    }
+  };
+
+  // menu flutuante WhatsApp
+  const fabWrap=document.getElementById('fabWrap'),fabBtn=document.getElementById('fabBtn');
+  fabBtn.onclick=e=>{e.stopPropagation();fabWrap.classList.toggle('open');};
+  document.addEventListener('click',e=>{if(!fabWrap.contains(e.target))fabWrap.classList.remove('open');});
+
+  document.getElementById('form').onsubmit=e=>{
+    e.preventDefault();
+    const nome=document.getElementById('n').value.trim();
+    const tel=document.getElementById('t').value.trim();
+    const email=document.getElementById('e').value.trim();
+    const msg=document.getElementById('m').value.trim();
+    const para='antonio.severo@ani-home.pt,ricardo.moreira@ani-home.pt';
+    const assunto='Pedido de informação — Home IV';
+    const corpo=
+      'Nome: '+nome+'\n'+
+      'Telefone: '+tel+'\n'+
+      'Email: '+email+'\n\n'+
+      msg;
+    const link='mailto:'+para+'?subject='+encodeURIComponent(assunto)+'&body='+encodeURIComponent(corpo);
+    window.location.href=link;
+    document.getElementById('ok').classList.add('show');
+  };
+</script>
+</body>
+</html>

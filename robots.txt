@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /audio/
+Disallow: /brochura.html
+
+Sitemap: https://www.home04.pt/sitemap.xml
