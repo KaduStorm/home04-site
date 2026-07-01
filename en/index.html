@@ -510,6 +510,17 @@
       </div>
     </div>
 
+    <!-- Galeria fachada -->
+    <div class="fachada-wrap reveal">
+      <img src="../img/fachada/fachada-noite.webp" alt="Home IV Matosinhos — night facade" class="fachada-main" data-group="fachada" loading="lazy">
+      <div class="fachada-hidden">
+        <img src="../img/fachada/fachada-noite2.webp" alt="Home IV facade — night angle" data-group="fachada" loading="lazy">
+        <img src="../img/fachada/fachada-dia.webp" alt="Home IV facade — daytime view" data-group="fachada" loading="lazy">
+        <img src="../img/fachada/fachada-dia2.webp" alt="Home IV facade — daytime angle" data-group="fachada" loading="lazy">
+      </div>
+      <p class="fachada-hint">↑ Click to see all angles</p>
+    </div>
+
   </div>
 </section>
 
@@ -839,6 +850,15 @@
     im.style.cursor='zoom-in';
     im.onclick=e=>{e.stopPropagation();openLb([im.src],0);};
   });
+
+  // fachada — imagem grande abre lightbox com todos os ângulos
+  const fachadaWrap = document.querySelector('.fachada-wrap');
+  if(fachadaWrap){
+    const fachadaImgs = [...fachadaWrap.querySelectorAll('img')];
+    const fachadaSrcs = fachadaImgs.map(i=>i.src);
+    fachadaWrap.onclick = e => {e.stopPropagation(); openLb(fachadaSrcs, 0);};
+    fachadaWrap.style.cursor = 'zoom-in';
+  }
 
   document.getElementById('lbPrev').onclick=e=>{e.stopPropagation();step(-1);};
   document.getElementById('lbNext').onclick=e=>{e.stopPropagation();step(1);};

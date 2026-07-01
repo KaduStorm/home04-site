@@ -272,6 +272,13 @@
   .cookie-btn.accept{background:var(--madeira);color:var(--linho);}
   .cookie-btn.reject{background:transparent;color:var(--linho);border:1px solid rgba(237,232,224,.3);}
   .cookie-btn:hover{opacity:.85;}
+  /* galeria fachada */
+  .fachada-wrap{position:relative;margin-top:52px;cursor:pointer;}
+  .fachada-main{width:100%;max-height:620px;object-fit:cover;border-radius:var(--raio);display:block;transition:opacity .2s;}
+  .fachada-main:hover{opacity:.92;}
+  .fachada-hidden{display:none;}
+  .fachada-hint{font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.06em;color:var(--tinta-suave);margin-top:10px;text-align:center;opacity:.7;}
+
   /* seletor de língua */
   .lang-switcher{display:flex;gap:6px;align-items:center;margin-left:8px;}
   .lang{font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.08em;color:var(--tinta-suave);text-decoration:none;padding:3px 7px;border-radius:3px;transition:background .15s;}
@@ -390,6 +397,18 @@
       <div class="stat"><span class="n">30</span><span class="l">Apartamentos</span></div>
       <div class="stat"><span class="n">190m</span><span class="l">Até ao metro</span></div>
     </div>
+
+    <!-- Galeria fachada -->
+    <div class="fachada-wrap reveal">
+      <img src="img/fachada/fachada-noite.webp" alt="Fachada Home IV Matosinhos — vista nocturna" class="fachada-main" data-group="fachada" loading="lazy">
+      <div class="fachada-hidden">
+        <img src="img/fachada/fachada-noite2.webp" alt="Fachada Home IV — ângulo nocturno" data-group="fachada" loading="lazy">
+        <img src="img/fachada/fachada-dia.webp" alt="Fachada Home IV — vista diurna" data-group="fachada" loading="lazy">
+        <img src="img/fachada/fachada-dia2.webp" alt="Fachada Home IV — vista diurna ângulo" data-group="fachada" loading="lazy">
+      </div>
+      <p class="fachada-hint">↑ Clica para ver todos os ângulos</p>
+    </div>
+
   </div>
 </section>
 
@@ -852,7 +871,14 @@
     im.onclick=e=>{e.stopPropagation();openLb([im.src],0);};
   });
 
-  document.getElementById('lbPrev').onclick=e=>{e.stopPropagation();step(-1);};
+  // fachada — imagem grande abre lightbox com todos os ângulos
+  const fachadaWrap = document.querySelector('.fachada-wrap');
+  if(fachadaWrap){
+    const fachadaImgs = [...fachadaWrap.querySelectorAll('img')];
+    const fachadaSrcs = fachadaImgs.map(i=>i.src);
+    fachadaWrap.onclick = e => {e.stopPropagation(); openLb(fachadaSrcs, 0);};
+    fachadaWrap.style.cursor = 'zoom-in';
+  }
   document.getElementById('lbNext').onclick=e=>{e.stopPropagation();step(1);};
   document.getElementById('lbClose').onclick=()=>lb.classList.remove('show');
   lb.onclick=()=>lb.classList.remove('show');
