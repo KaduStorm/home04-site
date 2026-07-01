@@ -244,7 +244,8 @@
   footer .wrap{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:14px;flex-direction:column;}
   footer .credits{font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.05em;display:flex;gap:22px;flex-wrap:wrap;justify-content:center;}
 
-  .fab-wrap{position:fixed;right:26px;bottom:26px;z-index:70;display:flex;flex-direction:column;align-items:flex-end;gap:14px;}
+  .fab-wrap{position:fixed;right:26px;bottom:26px;z-index:70;display:flex;flex-direction:column;align-items:flex-end;gap:14px;pointer-events:none;}
+  .fab-wrap > *{pointer-events:auto;}
   .fab{background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 28px -8px rgba(0,0,0,.4);border:none;cursor:pointer;transition:transform .15s;padding:0;}
   .fab:hover{transform:scale(1.07);}
   .fab svg{width:28px;height:28px;position:absolute;transition:opacity .2s,transform .2s;}
