@@ -131,6 +131,7 @@
   .s-escura .eyebrow{color:var(--oceano-claro);}
 
   .head{display:flex;justify-content:space-between;align-items:flex-end;gap:48px;margin-bottom:62px;flex-wrap:wrap;}
+  .head > div:last-child{display:flex;flex-direction:column;justify-content:space-between;align-self:stretch;}
   .head h2{font-size:clamp(2rem,4vw,3.1rem);max-width:18ch;line-height:1.02;}
   .head .eyebrow{display:block;margin-bottom:18px;}
   .head p{max-width:38ch;color:var(--tinta-suave);font-size:.98rem;}
@@ -273,8 +274,8 @@
   .cookie-btn.reject{background:transparent;color:var(--linho);border:1px solid rgba(237,232,224,.3);}
   .cookie-btn:hover{opacity:.85;}
   /* galeria fachada */
-  .fachada-wrap{position:relative;margin-top:52px;cursor:pointer;}
-  .fachada-main{width:100%;max-height:320px;object-fit:cover;border-radius:var(--raio);display:block;transition:opacity .2s;margin-top:24px;}
+  .fachada-wrap{position:relative;margin-top:48px;cursor:pointer;}
+  .fachada-main{width:100%;max-height:380px;object-fit:cover;object-position:center top;border-radius:var(--raio);display:block;transition:opacity .2s;}
   .fachada-main:hover{opacity:.92;}
   .fachada-hidden{display:none;}
   .fachada-hint{font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.06em;color:var(--tinta-suave);margin-top:10px;text-align:center;opacity:.7;}
