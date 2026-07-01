@@ -130,8 +130,9 @@
   .s-escura{background:var(--carvao);color:var(--areia);}
   .s-escura .eyebrow{color:var(--oceano-claro);}
 
-  .head{display:grid;grid-template-columns:1fr 1fr;align-items:start;gap:48px;margin-bottom:62px;}
-  .head > div:last-child{display:flex;flex-direction:column;}
+  .head{display:flex;justify-content:space-between;align-items:flex-end;gap:48px;margin-bottom:62px;flex-wrap:wrap;}
+  .conceito-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-bottom:62px;}
+  .conceito-grid > div:last-child{display:flex;flex-direction:column;gap:24px;}
   .head h2{font-size:clamp(2rem,4vw,3.1rem);max-width:18ch;line-height:1.02;}
   .head .eyebrow{display:block;margin-bottom:18px;}
   .head p{max-width:38ch;color:var(--tinta-suave);font-size:.98rem;}
@@ -315,7 +316,7 @@
   @media (max-width:960px){
     .tipo,.tipo.flip{grid-template-columns:1fr;}
     .tipo.flip .tipo-plan{order:0;}
-    .head{grid-template-columns:1fr;}
+    .conceito-grid{grid-template-columns:1fr;}
     .stats{grid-template-columns:1fr 1fr;}
     .stat:nth-child(2){border-right:none;}
     .finish-grid{grid-template-columns:1fr 1fr;}
@@ -385,7 +386,7 @@
 
 <section class="s-areia" id="conceito">
   <div class="wrap">
-    <div class="head reveal">
+    <div class="conceito-grid reveal">
       <div>
         <span class="eyebrow">O conceito</span>
         <h2>Viver leve, no sítio certo.</h2>
