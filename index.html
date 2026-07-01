@@ -274,7 +274,7 @@
   .cookie-btn:hover{opacity:.85;}
   /* galeria fachada */
   .fachada-wrap{position:relative;margin-top:52px;cursor:pointer;}
-  .fachada-main{width:100%;max-height:620px;object-fit:cover;border-radius:var(--raio);display:block;transition:opacity .2s;}
+  .fachada-main{width:100%;max-height:320px;object-fit:cover;border-radius:var(--raio);display:block;transition:opacity .2s;margin-top:24px;}
   .fachada-main:hover{opacity:.92;}
   .fachada-hidden{display:none;}
   .fachada-hint{font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.06em;color:var(--tinta-suave);margin-top:10px;text-align:center;opacity:.7;}
@@ -390,23 +390,22 @@
       </div>
       <p>Apartamentos desenhados ao detalhe, onde cada metro conta. Madeira, pedra e luz. Uma base serena para quem quer estar no centro de tudo.</p>
     </div>
+    <!-- Galeria fachada -->
+    <div class="fachada-wrap reveal">
+      <img src="img/fachada/fachada-dia.webp" alt="Fachada Home IV Matosinhos — vista diurna" class="fachada-main" loading="lazy">
+      <div class="fachada-hidden">
+        <img src="img/fachada/fachada-noite.webp" alt="Fachada Home IV — vista nocturna" loading="lazy">
+        <img src="img/fachada/fachada-noite2.webp" alt="Fachada Home IV — ângulo nocturno" loading="lazy">
+        <img src="img/fachada/fachada-dia2.webp" alt="Fachada Home IV — vista diurna ângulo" loading="lazy">
+      </div>
+      <p class="fachada-hint">↑ Clica para ver todos os ângulos</p>
+    </div>
     <p class="lead-text reveal">Um edifício intimista, com <em>30 frações</em> pensadas para quem valoriza a centralidade: jovens profissionais, investimento para arrendamento, ou um pied-à-terre à beira-mar.</p>
     <div class="stats reveal">
       <div class="stat"><span class="n">3</span><span class="l">Layouts diferentes</span></div>
       <div class="stat"><span class="n">A</span><span class="l">Classe energética</span></div>
       <div class="stat"><span class="n">30</span><span class="l">Apartamentos</span></div>
       <div class="stat"><span class="n">190m</span><span class="l">Até ao metro</span></div>
-    </div>
-
-    <!-- Galeria fachada -->
-    <div class="fachada-wrap reveal">
-      <img src="img/fachada/fachada-noite.webp" alt="Fachada Home IV Matosinhos — vista nocturna" class="fachada-main" data-group="fachada" loading="lazy">
-      <div class="fachada-hidden">
-        <img src="img/fachada/fachada-noite2.webp" alt="Fachada Home IV — ângulo nocturno" data-group="fachada" loading="lazy">
-        <img src="img/fachada/fachada-dia.webp" alt="Fachada Home IV — vista diurna" data-group="fachada" loading="lazy">
-        <img src="img/fachada/fachada-dia2.webp" alt="Fachada Home IV — vista diurna ângulo" data-group="fachada" loading="lazy">
-      </div>
-      <p class="fachada-hint">↑ Clica para ver todos os ângulos</p>
     </div>
 
   </div>
