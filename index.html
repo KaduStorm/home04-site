@@ -130,7 +130,7 @@
   .s-escura{background:var(--carvao);color:var(--areia);}
   .s-escura .eyebrow{color:var(--oceano-claro);}
 
-  .head{display:flex;justify-content:space-between;align-items:flex-start;gap:48px;margin-bottom:62px;flex-wrap:wrap;}
+  .head{display:grid;grid-template-columns:1fr 1fr;align-items:start;gap:48px;margin-bottom:62px;}
   .head > div:last-child{display:flex;flex-direction:column;}
   .head h2{font-size:clamp(2rem,4vw,3.1rem);max-width:18ch;line-height:1.02;}
   .head .eyebrow{display:block;margin-bottom:18px;}
@@ -315,6 +315,7 @@
   @media (max-width:960px){
     .tipo,.tipo.flip{grid-template-columns:1fr;}
     .tipo.flip .tipo-plan{order:0;}
+    .head{grid-template-columns:1fr;}
     .stats{grid-template-columns:1fr 1fr;}
     .stat:nth-child(2){border-right:none;}
     .finish-grid{grid-template-columns:1fr 1fr;}
