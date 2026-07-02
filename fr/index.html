@@ -377,21 +377,7 @@
         <span class="eyebrow">Le concept</span>
         <h2>Vivre léger, au bon endroit.</h2>
       </div>
-      <div>
-        <p>Des appartements conçus dans les moindres détails, où chaque mètre compte. Bois, pierre et lumière. Une base sereine pour ceux qui veulent être au centre de tout.</p>
-        <!-- Galeria fachada -->
-        <div class="fachada-wrap">
-          <img src="../img/fachada/fachada-dia.webp" alt="Home IV Matosinhos — façade de jour" class="fachada-main" loading="lazy">
-          <div class="fachada-hidden">
-            <img src="../img/fachada/fachada-noite.webp" alt="Home IV façade — vue nocturne" loading="lazy">
-            <img src="../img/fachada/fachada-noite2.webp" alt="Home IV façade — angle nocturne" loading="lazy">
-            <img src="../img/fachada/fachada-dia2.webp" alt="Home IV façade — angle de jour" loading="lazy">
-          </div>
-          <p class="fachada-hint">↑ Cliquez pour voir tous les angles</p>
-        </div>
-      </div>
-    </div>
-      <p class="fachada-hint">↑ Cliquez pour voir tous les angles</p>
+      <p>Des appartements conçus dans les moindres détails, où chaque mètre compte. Bois, pierre et lumière. Une base sereine pour ceux qui veulent être au centre de tout.</p>
     </div>
     <p class="lead-text reveal">Un immeuble intimiste de <em>30 appartements</em> pensés pour ceux qui valorisent la centralité : jeunes actifs, investissement locatif, ou pied-à-terre en bord de mer.</p>
     <div class="stats reveal">
@@ -853,15 +839,6 @@
     im.style.cursor='zoom-in';
     im.onclick=e=>{e.stopPropagation();openLb([im.src],0);};
   });
-
-  // fachada — imagem grande abre lightbox com todos os ângulos
-  const fachadaWrap = document.querySelector('.fachada-wrap');
-  if(fachadaWrap){
-    const fachadaImgs = [...fachadaWrap.querySelectorAll('img')];
-    const fachadaSrcs = fachadaImgs.map(i=>i.src);
-    fachadaWrap.onclick = e => {e.stopPropagation(); openLb(fachadaSrcs, 0);};
-    fachadaWrap.style.cursor = 'zoom-in';
-  }
 
   document.getElementById('lbPrev').onclick=e=>{e.stopPropagation();step(-1);};
   document.getElementById('lbNext').onclick=e=>{e.stopPropagation();step(1);};

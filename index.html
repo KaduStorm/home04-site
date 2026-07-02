@@ -131,8 +131,6 @@
   .s-escura .eyebrow{color:var(--oceano-claro);}
 
   .head{display:flex;justify-content:space-between;align-items:flex-end;gap:48px;margin-bottom:62px;flex-wrap:wrap;}
-  .conceito-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-bottom:62px;}
-  .conceito-grid > div:last-child{display:flex;flex-direction:column;gap:24px;}
   .head h2{font-size:clamp(2rem,4vw,3.1rem);max-width:18ch;line-height:1.02;}
   .head .eyebrow{display:block;margin-bottom:18px;}
   .head p{max-width:38ch;color:var(--tinta-suave);font-size:.98rem;}
@@ -274,12 +272,6 @@
   .cookie-btn.accept{background:var(--madeira);color:var(--linho);}
   .cookie-btn.reject{background:transparent;color:var(--linho);border:1px solid rgba(237,232,224,.3);}
   .cookie-btn:hover{opacity:.85;}
-  /* galeria fachada */
-  .fachada-wrap{position:relative;margin-top:48px;cursor:pointer;}
-  .fachada-main{width:100%;max-height:380px;object-fit:cover;object-position:center top;border-radius:var(--raio);display:block;transition:opacity .2s;}
-  .fachada-main:hover{opacity:.92;}
-  .fachada-hidden{display:none;}
-  .fachada-hint{font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.06em;color:var(--tinta-suave);margin-top:10px;text-align:center;opacity:.7;}
 
   /* seletor de língua */
   .lang-switcher{display:flex;gap:6px;align-items:center;margin-left:8px;}
@@ -316,7 +308,6 @@
   @media (max-width:960px){
     .tipo,.tipo.flip{grid-template-columns:1fr;}
     .tipo.flip .tipo-plan{order:0;}
-    .conceito-grid{grid-template-columns:1fr;}
     .stats{grid-template-columns:1fr 1fr;}
     .stat:nth-child(2){border-right:none;}
     .finish-grid{grid-template-columns:1fr 1fr;}
@@ -386,24 +377,13 @@
 
 <section class="s-areia" id="conceito">
   <div class="wrap">
-    <div class="conceito-grid reveal">
+    <div class="head reveal">
       <div>
         <span class="eyebrow">O conceito</span>
         <h2>Viver leve, no sítio certo.</h2>
       </div>
-      <div>
-        <p>Apartamentos desenhados ao detalhe, onde cada metro conta. Madeira, pedra e luz. Uma base serena para quem quer estar no centro de tudo.</p>
-        <!-- Galeria fachada -->
-        <div class="fachada-wrap">
-          <img src="img/fachada/fachada-dia.webp" alt="Fachada Home IV Matosinhos — vista diurna" class="fachada-main" loading="lazy">
-          <div class="fachada-hidden">
-            <img src="img/fachada/fachada-noite.webp" alt="Fachada Home IV — vista nocturna" loading="lazy">
-            <img src="img/fachada/fachada-noite2.webp" alt="Fachada Home IV — ângulo nocturno" loading="lazy">
-            <img src="img/fachada/fachada-dia2.webp" alt="Fachada Home IV — vista diurna ângulo" loading="lazy">
-          </div>
-          <p class="fachada-hint">↑ Clica para ver todos os ângulos</p>
-        </div>
-      </div>
+      <p>Apartamentos desenhados ao detalhe, onde cada metro conta. Madeira, pedra e luz. Uma base serena para quem quer estar no centro de tudo.</p>
+    </div>
     </div>
     <p class="lead-text reveal">Um edifício intimista, com <em>30 frações</em> pensadas para quem valoriza a centralidade: jovens profissionais, investimento para arrendamento, ou um pied-à-terre à beira-mar.</p>
     <div class="stats reveal">
@@ -874,15 +854,6 @@
     im.style.cursor='zoom-in';
     im.onclick=e=>{e.stopPropagation();openLb([im.src],0);};
   });
-
-  // fachada — imagem grande abre lightbox com todos os ângulos
-  const fachadaWrap = document.querySelector('.fachada-wrap');
-  if(fachadaWrap){
-    const fachadaImgs = [...fachadaWrap.querySelectorAll('img')];
-    const fachadaSrcs = fachadaImgs.map(i=>i.src);
-    fachadaWrap.onclick = e => {e.stopPropagation(); openLb(fachadaSrcs, 0);};
-    fachadaWrap.style.cursor = 'zoom-in';
-  }
   document.getElementById('lbNext').onclick=e=>{e.stopPropagation();step(1);};
   document.getElementById('lbClose').onclick=()=>lb.classList.remove('show');
   lb.onclick=()=>lb.classList.remove('show');
